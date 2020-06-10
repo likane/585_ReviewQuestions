@@ -74,7 +74,7 @@ boolean false
 TODO
 
 20. Does Ruby have a native set type?
-YES
+Yes
 
 21. How do you “declare” a local variable in Ruby?
 def method1
@@ -102,9 +102,10 @@ TODO
 
 26. How does one best create an array of size 100 in which every element is 0? (Do not write a loop.)
 
-What is the difference between a+b, and [*a,*b] where a and b are arrays?
+27. What is the difference between a+b, and [*a,*b] where a and b are arrays?
+The + operator is equivalent to the concat method whereas the * is the splat. An array of elements of a are in the master array as element 1 as well as the elements of b in element 2 of the master array.
 
-How do you write an expression that adds element e to array a so that a is mutated? How do you write a non-mutating append expression?
+28. How do you write an expression that adds element e to array a so that a is mutated? How do you write a non-mutating append expression?
 
 How do you add an element to the front of a list, in a mutating fashion? Is this efficient? If not, what should you do instead?
 
@@ -141,16 +142,24 @@ What is the first line of that block at the end of a module that allows you to �
 Instead of throw, Ruby uses **____**.
 
 The things inside of a class are called **____**.
+Instance Methods
+
 
 How do you create an instance of a class?
+>> class Integer
+>>   def tripled; self * 3; end
+>> end
 
 What is the difference between a proc and a method?
+Blocks can’t be assigned to variables, so Ruby has procs which can. There are two kinds of procs: those defined with Proc.new (don't use these), and a better kind of proc, called a lambda. You should always use lambdas, pretty much.
 
 Suppose class Circle has a zero-argument method area and c is an instance of Circle. We know that c.area is actually a method call. How do we refer to the area method itself, without calling it?
 
 What is the method initialize used for?
+Instance fields have names beginning with @. The initialize method is called during the call to new on the class.
 
 What is the Ruby analog for Python’s __str__ or JavaScript’s toString?
+'.to_s'
 
 What is the syntax for declaring a class that is a subtype of another class?
 
@@ -159,3 +168,4 @@ How do we define class methods in Ruby?
 How do you allow the operators + and - to apply to instances of a class you write yourself?
 
 What is the Ruby analog of JavaScript generators (the ones made with function*).
+lambda's
