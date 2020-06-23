@@ -107,9 +107,9 @@ The + operator is equivalent to the concat method whereas the * is the splat. An
 
 28. How do you write an expression that adds element e to array a so that a is mutated? How do you write a non-mutating append expression?
 
-How do you add an element to the front of a list, in a mutating fashion? Is this efficient? If not, what should you do instead?
+29. How do you add an element to the front of a list, in a mutating fashion? Is this efficient? If not, what should you do instead?
 
-Write an IIFE that applies a lambda that squares its argument to the value 100.
+30. Write an IIFE that applies a lambda that squares its argument to the value 100.
 
 What are the two main ways that lambda procs differ from non-lambda procs?
 
